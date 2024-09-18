@@ -152,7 +152,7 @@ These are basic tests using [locustio](http://docs.locust.io/en/latest/quickstar
 
 ### Run a script
 
-1. Set your server and other information in ```creds.son```
+1. Set your server and other information in ```creds.json```
 1. cd into ```src/stress_tests```
 1. Run a test script.  In this example run **basic_test_02.py**
     - From the Terminal: ```locust -f basic_test_02.py```

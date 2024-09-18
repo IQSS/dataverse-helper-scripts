@@ -1,7 +1,7 @@
 # pulls in lots of libraries...
 # cython and gevent were added because otherwise we couldn't
 # install gevent (required by locustio) on OS X 10.10.5 and higher
-#cython
-#-e git+git://github.com/gevent/gevent.git#egg=gevent
+cython
+-e git+git://github.com/gevent/gevent.git#egg=gevent
 locustio==0.7.2
 beautifulsoup4==4.3
