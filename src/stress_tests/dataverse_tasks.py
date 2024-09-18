@@ -61,8 +61,8 @@ def random_mydata_page(l):
     msg('> search url: {0}'.format(description))
     #msg('> search url: {0} - {1}'.format(description, mydata_url))
     r = l.client.get(mydata_url, **get_locust_request_kwargs())
-    print 'r.status_code', r.status_code
-    print 'r.text', r.text[:200]
+    print ('r.status_code', r.status_code)
+    print ('r.text', r.text[:200])
 
 def random_search_page(l):
     search_url = get_random_search_url()
@@ -207,7 +207,7 @@ def assign_and_revoke_role(l):
     delete_url = '/api/dataverses/{0}/assignments/{1}'.format(dataverse, new_id)
     r = l.client.delete(delete_url, headers=headers, **get_locust_request_kwargs())
     #print r.status_code
-    print r.text
+    print (r.text)
     #print r.json()
 
 

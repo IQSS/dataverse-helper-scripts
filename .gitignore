@@ -1,5 +1,7 @@
 .idea
 .idea/*
+out
+dataverse-helper-scripts.iml
 src/ezid_helper/creds.json
 src/ezid_helper/creds-*.json
 src/ezid_helper/output/doi-responses/*
@@ -13,6 +15,12 @@ __pycache__/
 
 # C extensions
 *.so
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
 
 # Distribution / packaging
 .Python
@@ -89,3 +97,5 @@ src/wm-vagrant/shared-dataverse-information/
 src/ddi_create/output/
 
 src/file_downloader/output/output_2016-0427
+src/stress_tests/gevent
+
