@@ -10,14 +10,10 @@ class QuickstartUser(FastHttpUser):
 
     @task
     def random_search1(self):
-        self.client.get("/api/search?q=*&per_page=1000&sort=date&order=asc&q=*&fq=dateSort:[2018-01-01T00\:00\:00Z+TO+2019-01-01T00\:00\:00Z]")
+        self.client.get("/api/search?q=*")
 
     @task
     def random_search2(self):
-        self.client.get("/api/search?q=finch&show_facets=true")
-
-    @task
-    def random_search3(self):
         self.client.get("/dataverse/harvard/?q=fileName%3Aselfrecovery.tab")
 
     @task
