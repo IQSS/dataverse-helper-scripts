@@ -157,3 +157,12 @@ These are basic tests using [locustio](http://docs.locust.io/en/latest/quickstar
 1. Run a test script.  In this example run **basic_test_02.py**
     - From the Terminal: ```locust -f basic_test_02.py```
 1. Open a browser and go to: http://127.0.0.1:8089/
+
+### Run a performance script For Harvard Dataverse QA  
+1. Set your server and other information in ```creds.json```
+2. cd into ```src/stress_tests```
+3. Run a test script.
+    - From the Terminal: ```locust -f dataverse_perf.py```
+4. Open a browser and go to: http://127.0.0.1:8089/
+   5. HOST https://qa.dataverse.org
+   6. duration 10 minutes

@@ -51,3 +51,7 @@ class QuickstartUser(FastHttpUser):
     @task
     def random_dataset9(self):
         self.client.get("/dataset.xhtml?persistentId=doi:10.7910/DVN/27626")
+
+    @task
+    def get_version_dif1(self):
+        self.client.get("/api/datasets/:persistentId/versions/compareSummary?persistentId=doi:10.7910/DVN/29236")
